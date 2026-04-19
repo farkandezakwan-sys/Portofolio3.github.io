@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">YN<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle">☀</button>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="closeMobile()">Home</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#achievements" onclick="closeMobile()">Achievements</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#gallery" onclick="closeMobile()">Gallery</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <section id="home" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text reveal">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Your Full<br/><span class="accent">Name Here</span></h1>
+        <p class="hero-tagline" id="tagline">Student</p>
+        <p class="hero-bio">A passionate Computer Science student at [Your College Name], driven by curiosity and a love for building solutions that make a difference.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/yourusername" target="_blank" class="social-pill">GitHub</a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-pill">LinkedIn</a>
+          <a href="mailto:your@email.com" class="social-pill">Email</a>
+        </div>
+      </div>
+      <div class="hero-image reveal reveal-right">
+        <div class="photo-frame">
+          <img src="assets/images/profile.jpg" alt="Your Name" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="photo-placeholder"><span>Your Photo</span><small>assets/images/profile.jpg</small></div>
+        </div>
+        <div class="floating-badge badge-1">🎓 B.Tech CSE</div>
+        <div class="floating-badge badge-2">💡 Problem Solver</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">Who Am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-icon">🎓</div>
+          <h3>Education</h3>
+          <ul class="about-list">
+            <li><strong>B.Tech in Computer Science</strong><br/>[Your College Name], [City]<br/>20XX – 20XX | CGPA: X.XX</li>
+            <li><strong>12th Standard</strong><br/>[Your School] | Year | XX%</li>
+            <li><strong>10th Standard</strong><br/>[Your School] | Year | XX%</li>
+          </ul>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon">💻</div>
+          <h3>Technical Skills</h3>
+          <div class="skills-wrap">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Machine Learning</span>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon">🎯</div>
+          <h3>Goals & Interests</h3>
+          <p>I aspire to build impactful technology solutions in AI and software development, eager to grow as a full-stack developer.</p>
+          <ul class="about-list" style="margin-top:12px">
+            <li>Artificial Intelligence & ML</li>
+            <li>Web & App Development</li>
+            <li>Open Source Contribution</li>
+            <li>Competitive Programming</li>
+          </ul>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon">💪</div>
+          <h3>Strengths</h3>
+          <div class="strength-item"><label>Problem Solving <b>90%</b></label><span class="strength-bar" style="--w:90%"></span></div>
+          <div class="strength-item"><label>Teamwork <b>80%</b></label><span class="strength-bar" style="--w:80%"></span></div>
+          <div class="strength-item"><label>Communication <b>85%</b></label><span class="strength-bar" style="--w:85%"></span></div>
+          <div class="strength-item"><label>Leadership <b>75%</b></label><span class="strength-bar" style="--w:75%"></span></div>
+          <div class="strength-item"><label>Adaptability <b>88%</b></label><span class="strength-bar" style="--w:88%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 — Achievements</span>
+        <h2 class="section-title">Certificates & Awards</h2>
+      </div>
+      <h3 class="sub-heading reveal">📜 Certificates</h3>
+      <div class="cards-grid">
+        <div class="achievement-card reveal">
+          <div class="cert-img-wrap">
+            <img src="assets/images/coursera-cert.jpg" alt="Coursera" onerror="this.parentElement.classList.add('img-missing')"/>
+            <div class="cert-overlay">View Certificate</div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-badge">Coursera</span>
+            <h4>[Course Name]</h4>
+            <p>Completed [Course Name] by [University] on Coursera covering [Topics].</p>
+            <span class="cert-date">📅 Month, Year</span>
+          </div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="cert-img-wrap">
+            <img src="assets/images/netacad-cert.jpg" alt="NetAcad" onerror="this.parentElement.classList.add('img-missing')"/>
+            <div class="cert-overlay">View Certificate</div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-badge">Cisco NetAcad</span>
+            <h4>[Course Name]</h4>
+            <p>Successfully completed [Networking / Cybersecurity / Python] by Cisco Networking Academy.</p>
+            <span class="cert-date">📅 Month, Year</span>
+          </div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="cert-img-wrap">
+            <img src="assets/images/yuva-ai-cert.jpg" alt="Yuva AI" onerror="this.parentElement.classList.add('img-missing')"/>
+            <div class="cert-overlay">View Certificate</div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-badge">Yuva AI</span>
+            <h4>AI Fundamentals</h4>
+            <p>Completed the Yuva AI program covering fundamentals of AI and Machine Learning.</p>
+            <span class="cert-date">📅 Month, Year</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading reveal" style="margin-top:3rem">🚀 Projects & Programs</h3>
+      <div class="cards-grid">
+        <div class="achievement-card featured reveal">
+          <div class="cert-img-wrap">
+            <img src="assets/images/ai4a-project.jpg" alt="Ai4A" onerror="this.parentElement.classList.add('img-missing')"/>
+            <div class="cert-overlay">View Project</div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-badge ai4a">Ai4A</span>
+            <h4>[Your Ai4A Project Title]</h4>
+            <p>Describe your Ai4A project — the problem it solves, tools used, and the outcome achieved.</p>
+            <span class="cert-date">📅 Month, Year</span>
+          </div>
+        </div>
+        <div class="achievement-card featured reveal">
+          <div class="cert-img-wrap">
+            <img src="assets/images/design-thinking-project.jpg" alt="Design Thinking" onerror="this.parentElement.classList.add('img-missing')"/>
+            <div class="cert-overlay">View Project</div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-badge dt">Design Thinking</span>
+            <h4>[Design Thinking Project Title]</h4>
+            <p>Problem statement, ideation process, and your proposed solution.</p>
+            <span class="cert-date">📅 Month, Year</span>
+          </div>
+        </div>
+        <div class="achievement-card featured reveal">
+          <div class="cert-img-wrap">
+            <img src="assets/images/ace-project.jpg" alt="ACE" onerror="this.parentElement.classList.add('img-missing')"/>
+            <div class="cert-overlay">View Project</div>
+          </div>
+          <div class="cert-body">
+            <span class="cert-badge ace">ACE</span>
+            <h4>[ACE Project Title]</h4>
+            <p>Objectives, technologies used, your role, and the impact of your ACE project.</p>
+            <span class="cert-date">📅 Month, Year</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading reveal" style="margin-top:3rem">🏆 Awards & Events</h3>
+      <div class="awards-grid">
+        <div class="award-item reveal"><div class="award-icon">🥇</div><div><h4>[Award Name]</h4><p>[Description of the award and when received]</p></div></div>
+        <div class="award-item reveal"><div class="award-icon">🏅</div><div><h4>[Hackathon / Event]</h4><p>[Position achieved or participation details]</p></div></div>
+        <div class="award-item reveal"><div class="award-icon">🎖️</div><div><h4>[Recognition / Honor]</h4><p>[Description of the recognition]</p></div></div>
+        <div class="award-item reveal"><div class="award-icon">📌</div><div><h4>[Workshop / Seminar]</h4><p>[Topic and organizer]</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 — Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/images/project1-screenshot.jpg" alt="Project 1" onerror="this.parentElement.classList.add('img-missing')"/>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project1" target="_blank" class="proj-link">GitHub ↗</a>
+              <a href="#" target="_blank" class="proj-link">Live Demo ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Python</span><span>ML</span><span>Flask</span></div>
+            <h3>[Project Name 1]</h3>
+            <p>Describe this project: the problem it solves, technologies used, and your role.</p>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/images/project2-screenshot.jpg" alt="Project 2" onerror="this.parentElement.classList.add('img-missing')"/>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project2" target="_blank" class="proj-link">GitHub ↗</a>
+              <a href="#" target="_blank" class="proj-link">Live Demo ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <h3>[Project Name 2]</h3>
+            <p>Describe this project: the problem it solves, technologies used, and your role.</p>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/images/project3-screenshot.jpg" alt="Project 3" onerror="this.parentElement.classList.add('img-missing')"/>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/project3" target="_blank" class="proj-link">GitHub ↗</a>
+              <a href="#" class="proj-link">Live Demo ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Java</span><span>SQL</span><span>JDBC</span></div>
+            <h3>[Project Name 3]</h3>
+            <p>Describe this project: the problem it solves, technologies used, and your role.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 — Gallery</span>
+        <h2 class="section-title">Photos & Certificates</h2>
+      </div>
+      <div class="gallery-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="photo">Photos</button>
+        <button class="filter-btn" data-filter="cert">Certificates</button>
+        <button class="filter-btn" data-filter="event">Events</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal" data-type="photo"><img src="assets/images/gallery/photo1.jpg" alt="Photo 1" onerror="this.parentElement.classList.add('img-missing-gallery')"/><div class="gallery-overlay"><span>Photo 1</span></div></div>
+        <div class="gallery-item reveal" data-type="cert"><img src="assets/images/gallery/cert1.jpg" alt="Cert 1" onerror="this.parentElement.classList.add('img-missing-gallery')"/><div class="gallery-overlay"><span>Coursera Cert</span></div></div>
+        <div class="gallery-item reveal" data-type="event"><img src="assets/images/gallery/event1.jpg" alt="Event 1" onerror="this.parentElement.classList.add('img-missing-gallery')"/><div class="gallery-overlay"><span>Event</span></div></div>
+        <div class="gallery-item reveal" data-type="cert"><img src="assets/images/gallery/cert2.jpg" alt="Cert 2" onerror="this.parentElement.classList.add('img-missing-gallery')"/><div class="gallery-overlay"><span>NetAcad Cert</span></div></div>
+        <div class="gallery-item reveal" data-type="photo"><img src="assets/images/gallery/photo2.jpg" alt="Photo 2" onerror="this.parentElement.classList.add('img-missing-gallery')"/><div class="gallery-overlay"><span>Photo 2</span></div></div>
+        <div class="gallery-item reveal" data-type="cert"><img src="assets/images/gallery/cert3.jpg" alt="Cert 3" onerror="this.parentElement.classList.add('img-missing-gallery')"/><div class="gallery-overlay"><span>Yuva AI Cert</span></div></div>
+        <div class="gallery-item reveal" data-type="event"><img src="assets/images/gallery/event2.jpg" alt="Event 2" onerror="this.parentElement.classList.add('img-missing-gallery')"/><div class="gallery-overlay"><span>Hackathon</span></div></div>
+        <div class="gallery-item reveal" data-type="photo"><img src="assets/images/gallery/photo3.jpg" alt="Photo 3" onerror="this.parentElement.classList.add('img-missing-gallery')"/><div class="gallery-overlay"><span>Photo 3</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img src="" alt="" id="lightboxImg"/>
+    <button class="lightbox-prev" id="lightboxPrev">‹</button>
+    <button class="lightbox-next" id="lightboxNext">›</button>
+  </div>
+
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 — Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:your@email.com" class="contact-link"><span class="contact-icon">✉</span><div><strong>Email</strong><span>your@email.com</span></div></a>
+            <a href="tel:+91XXXXXXXXXX" class="contact-link"><span class="contact-icon">📱</span><div><strong>Phone</strong><span>+91 XXXXX XXXXX</span></div></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-link"><span class="contact-icon">💼</span><div><strong>LinkedIn</strong><span>linkedin.com/in/yourusername</span></div></a>
+            <a href="https://github.com/yourusername" target="_blank" class="contact-link"><span class="contact-icon">🔗</span><div><strong>GitHub</strong><span>github.com/yourusername</span></div></a>
+          </div>
+          <div class="prn-box">
+            <span>PRN: <strong>XXXXXXXX</strong></span>
+            <span>Batch: <strong>20XX–20XX</strong></span>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <h3>Send a Message</h3>
+          <div class="form-group"><label>Your Name</label><input type="text" placeholder="John Doe" required/></div>
+          <div class="form-group"><label>Your Email</label><input type="email" placeholder="john@email.com" required/></div>
+          <div class="form-group"><label>Message</label><textarea rows="5" placeholder="Hi, I'd love to connect..." required></textarea></div>
+          <button type="submit" class="btn-primary full-width">Send Message ↗</button>
+          <div class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 <strong>Your Name</strong> · Built with HTML, CSS & JavaScript · Hosted on GitHub Pages</p>
+      <p class="footer-small">PRN: XXXXXXXX | [Your College Name]</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
